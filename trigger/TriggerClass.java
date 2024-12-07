@@ -5,6 +5,7 @@ import StringExamples.Strings;
 import arthmetics.PositiveOrNegative;
 import arthmetics.SquareRoot;
 import constants.Levels;
+import leetcode01.RemoveDuplicates;
 import leetcode01.Solution;
 import leetcode01.TwoSum;
 
@@ -18,7 +19,7 @@ import static arthmetics.SubstractionClass.substraction;
 
 public class TriggerClass {
     public static void trigger() {
-        int[] basicArray = {3,2,4};
+        int[] basicArray = {0,0,1,1,1,2,2,3,3,4};
         int target = 6;
         int[] array = {31, 21, 53, 24, 15, 86, 57, 18, 39, 10};
         String str = "hello";
@@ -49,6 +50,8 @@ public class TriggerClass {
         PositiveNegative(a);
         TwoSum twoSum = new TwoSum();
         System.out.println(Arrays.toString(twoSum.twoSum(basicArray, target)));
+        RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+        System.out.println(removeDuplicates.removeDuplicates(basicArray));
 
     }
 }
