@@ -10,6 +10,9 @@ public class RemoveDuplicates {
         {
             remove.add(num);
         }
+        Integer[] expectedArray = remove.toArray(new Integer[0]);
+        System.out.println(remove);
+
         return remove.size();
     }
 }
